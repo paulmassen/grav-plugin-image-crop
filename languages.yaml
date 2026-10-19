@@ -19,3 +19,14 @@ fr:
     COPY_METADATA_HELP: Copie aussi les métadonnées de l'image (texte alternatif, titre… du fichier .meta.yaml) vers la nouvelle copie.
     MAX_MEGAPIXELS: Taille maximale d'image (mégapixels)
     MAX_MEGAPIXELS_HELP: Les images plus grandes sont refusées, pour que PHP reste dans sa limite de mémoire pendant le recadrage.
+
+es:
+  PLUGIN_IMAGE_CROP:
+    QUALITY: Calidad de imagen
+    QUALITY_HELP: Calidad utilizada al guardar una imagen JPEG, WebP o AVIF recortada (PNG y GIF no tienen pérdida).
+    COPY_NAME: Nombre de las copias
+    COPY_NAME_HELP: "Nombre propuesto al guardar una copia. Variables: {name} (nombre original sin extensión), {width}, {height}. La extensión siempre se conserva."
+    COPY_METADATA: Copiar metadatos
+    COPY_METADATA_HELP: Copia también los metadatos de la imagen (texto alternativo, título… del archivo .meta.yaml) a la nueva copia.
+    MAX_MEGAPIXELS: Tamaño máximo de imagen (megapíxeles)
+    MAX_MEGAPIXELS_HELP: Las imágenes más grandes se rechazan para mantener PHP dentro de su límite de memoria durante el recorte.
