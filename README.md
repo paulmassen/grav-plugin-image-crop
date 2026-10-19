@@ -1,6 +1,7 @@
 # Image Crop Plugin for Grav Admin2
 
 Crop images straight from the **Admin2** media lists. A crop icon is added to every image thumbnail; it opens a small editor where you drag the corners (or edges) of a crop frame, then either **replace the original image** or **save a copy** at the new size.
+<img width="1191" height="746" alt="grav-plugin-image-crop" src="https://github.com/user-attachments/assets/dcc3ac9f-2fc1-458f-b574-bdf592fa7ed5" />
 
 > Admin2 only: this plugin requires **Grav 2** with the **Admin2** and **API** plugins. It does nothing on the front end and has no classic Admin integration.
 
