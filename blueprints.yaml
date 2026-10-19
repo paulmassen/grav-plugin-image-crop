@@ -1,0 +1,75 @@
+name: Image Crop
+slug: image-crop
+type: plugin
+version: 1.0.0
+description: Crop images straight from the Admin2 media lists, by dragging the corners of a crop frame. Overwrite the original or save a copy at the new size.
+icon: crop
+author:
+  name: Paul Massendari
+  email: paulmassendari@pm.me
+homepage: https://github.com/paulmassen/grav-plugin-image-crop
+keywords: grav, plugin, admin2, media, image, crop, editor
+bugs: https://github.com/paulmassen/grav-plugin-image-crop/issues
+docs: https://github.com/paulmassen/grav-plugin-image-crop/blob/main/README.md
+license: MIT
+
+compatibility:
+  grav: ['2.0']
+
+dependencies:
+  - { name: grav, version: '>=2.0.0' }
+  - { name: api, version: '>=1.0.51' }
+  - { name: admin2, version: '>=2.1.0' }
+
+form:
+  validation: loose
+  fields:
+    enabled:
+      type: toggle
+      label: PLUGIN_ADMIN.PLUGIN_STATUS
+      highlight: 1
+      default: 1
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+
+    quality:
+      type: range
+      label: PLUGIN_IMAGE_CROP.QUALITY
+      help: PLUGIN_IMAGE_CROP.QUALITY_HELP
+      default: 90
+      validate:
+        type: int
+        min: 40
+        max: 100
+
+    copy_name:
+      type: text
+      label: PLUGIN_IMAGE_CROP.COPY_NAME
+      help: PLUGIN_IMAGE_CROP.COPY_NAME_HELP
+      default: '{name}-{width}x{height}'
+      placeholder: '{name}-{width}x{height}'
+
+    copy_metadata:
+      type: toggle
+      label: PLUGIN_IMAGE_CROP.COPY_METADATA
+      help: PLUGIN_IMAGE_CROP.COPY_METADATA_HELP
+      highlight: 1
+      default: 1
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+
+    max_megapixels:
+      type: number
+      label: PLUGIN_IMAGE_CROP.MAX_MEGAPIXELS
+      help: PLUGIN_IMAGE_CROP.MAX_MEGAPIXELS_HELP
+      default: 60
+      validate:
+        type: int
+        min: 1
+        max: 500

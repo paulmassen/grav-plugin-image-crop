@@ -1,0 +1,21 @@
+en:
+  PLUGIN_IMAGE_CROP:
+    QUALITY: Image quality
+    QUALITY_HELP: Quality used when saving a cropped JPEG, WebP or AVIF image (PNG and GIF are lossless).
+    COPY_NAME: Copy file name
+    COPY_NAME_HELP: "Name suggested when saving a copy. Placeholders: {name} (original name without extension), {width}, {height}. The extension is always kept."
+    COPY_METADATA: Copy metadata
+    COPY_METADATA_HELP: Also copy the image metadata (alt text, title… stored in the .meta.yaml file) to the new copy.
+    MAX_MEGAPIXELS: Maximum image size (megapixels)
+    MAX_MEGAPIXELS_HELP: Larger images are refused, to keep PHP within its memory limit while cropping.
+
+fr:
+  PLUGIN_IMAGE_CROP:
+    QUALITY: Qualité d'image
+    QUALITY_HELP: Qualité utilisée pour enregistrer une image JPEG, WebP ou AVIF recadrée (PNG et GIF sont sans perte).
+    COPY_NAME: Nom des copies
+    COPY_NAME_HELP: "Nom proposé lors de l'enregistrement d'une copie. Variables : {name} (nom d'origine sans extension), {width}, {height}. L'extension est toujours conservée."
+    COPY_METADATA: Copier les métadonnées
+    COPY_METADATA_HELP: Copie aussi les métadonnées de l'image (texte alternatif, titre… du fichier .meta.yaml) vers la nouvelle copie.
+    MAX_MEGAPIXELS: Taille maximale d'image (mégapixels)
+    MAX_MEGAPIXELS_HELP: Les images plus grandes sont refusées, pour que PHP reste dans sa limite de mémoire pendant le recadrage.

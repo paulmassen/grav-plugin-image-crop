@@ -1,0 +1,5 @@
+enabled: true
+quality: 90                         # JPEG / WebP / AVIF quality of the cropped image (40-100)
+copy_name: '{name}-{width}x{height}' # Default name of a copy ({name}, {width}, {height})
+copy_metadata: true                 # Copy the .meta.yaml sidecar (alt, title…) to the new copy
+max_megapixels: 60                  # Refuse images larger than this (protects PHP memory)
